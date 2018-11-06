@@ -20,13 +20,14 @@ include chocolatey
   package { "VisualStudio2017Community":
     ensure          => installed,
     provider        => 'chocolatey',
-    install_options => [''],
+    install_options => ['-packageParameters "--allWorkloads --includeRecommended --includeOptional --passive"'],
   }
   package { "7zip":
     ensure          => installed,
     provider        => 'chocolatey',
     install_options => [''],
   }
+#yes git is already installed, but this makes sure it is!
   package { "git":
     ensure          => installed,
     provider        => 'chocolatey',
