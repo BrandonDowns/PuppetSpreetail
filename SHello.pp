@@ -20,7 +20,7 @@ include chocolatey
   package { "VisualStudio2017Community":
     ensure          => installed,
     provider        => 'chocolatey',
-    install_options => ['-packageParameters "--allWorkloads --includeRecommended --includeOptional --passive"'],
+    install_options => [''],
   }
   package { "7zip":
     ensure          => installed,
