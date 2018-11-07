@@ -33,7 +33,12 @@ include chocolatey
     provider        => 'chocolatey',
     install_options => [''],
   }
-  package { "googlechrome":
+package { "googlechrome":
+  ensure          => installed,
+  provider        => 'chocolatey',
+  install_options => [''],
+}
+  package { "visualstudio-github":
     ensure          => installed,
     provider        => 'chocolatey',
     install_options => [''],
