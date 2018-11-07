@@ -38,8 +38,3 @@ package { "googlechrome":
   provider        => 'chocolatey',
   install_options => [''],
 }
-  package { "visualstudio-github":
-    ensure          => installed,
-    provider        => 'chocolatey',
-    install_options => [''],
-  }
